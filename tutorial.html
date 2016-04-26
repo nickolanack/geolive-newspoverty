@@ -97,36 +97,36 @@ This popover will describe the search bar, tabs, and filter
 
 <script type="text/javascript">
 function onTutorialStart(){
-addTutorialStep('TOP_CENTER', 'Click on a blue circle to see details of changes to '+
-'multiple local news outlets in a concentrated geographic area. To return to the main map '+
-'click on the “Reset map” button.', function(el){
+    addTutorialStep('TOP_CENTER', 'Click on a blue circle to see details of changes to '+
+    'multiple local news outlets in a concentrated geographic area. To return to the main map '+
+    'click on the “Reset map” button.', function(el){
 
-    var cluster=null;
+        var cluster=null;
 
-    return {
-        margin:300,
-        onDisplay:function(){
-            el.addClass('cluster-hide');
-            cluster=el.appendChild(new Element('div', {class:'cluster-tutorial-icon', styles:{
+        return {
+            margin:300,
+            onDisplay:function(){
+                el.addClass('cluster-hide');
+                cluster=el.appendChild(new Element('div', {class:'cluster-tutorial-icon', styles:{
 
-                position: 'absolute',
-    top: '190px',
-    width: '100px',
-    height: '100px',
-    background: 'rgba(10, 121, 177, 0.7)',
-    left: 'calc( 50% - 52px )',
-    'border-radius': '100%',
-    border: '1.5px solid #0A79B1'
+                    position: 'absolute',
+        top: '190px',
+        width: '100px',
+        height: '100px',
+        background: 'rgba(10, 121, 177, 0.7)',
+        left: 'calc( 50% - 52px )',
+        'border-radius': '100%',
+        border: '1.5px solid #0A79B1'
 
 
-            }}));
+                }}));
 
-        },
-        onHide:function(){
-            el.removeClass('cluster-hide');
-            cluster.parentNode.removeChild(cluster);
-        }
-    };
-});
+            },
+            onHide:function(){
+                el.removeClass('cluster-hide');
+                cluster.parentNode.removeChild(cluster);
+            }
+        };
+    });
 }
 </script>
