@@ -1,0 +1,132 @@
+<!-- Right Content-->
+<article>
+<p><img src="administrator/components/com_geolive/assets/Tile%20Icons/maximize.png?tint=rgb(255,%20255,%20255)" style="
+    height: 40px;
+    width: auto;
+    margin: 10px;
+">
+    Fullscreen version of the map.
+</p>
+<p><img src="administrator/components/com_geolive/assets/Tile%20Icons/uncluster.png?tint=rgb(255,%20255,%20255)" style="
+    margin: 10px;
+    margin-left: 2px;
+">
+    Click “Ungroup markers” to show all individual markers.
+</p>
+
+<p style="
+"><img src="administrator/components/com_geolive/assets/Tile%20Icons/home.png?tint=rgb(255,%20255,%20255)" style="
+    height: 40px;
+    width: auto;
+    margin: 10px;
+">
+    Reset the map to show the full map of Canada and all markers.
+</p>
+
+<p><img src="components/com_geolive/users_files/user_files_400/Uploads/[ImAgE]_[G]_ye0_jZc_WXv.png" style="
+    height: 40px;
+    width: auto;
+    margin: 10px;
+    margin-left: 17px;
+">
+    Click on the green “Login-add content” button and follow the instructions to add a
+marker for a media outlet closure, service reduction or launch. You must supply a link for
+the information you provide so it can be verified by the map moderator.
+
+</p>
+<p style="
+"><img src="components/com_geolive/users_files/user_files_400/Uploads/KlG_HuW_ujS_[G]_[ImAgE].png" style="
+    margin: 10px;
+">
+    Complete a survey about the local news landscape in your community.
+</p>
+
+
+</article>
+
+
+
+
+
+
+<!-- Bottom Content-->
+</article>
+<p>
+This timelines shows the number of changes to local news media
+outlets over time. Isolate changes by time period by moving the sliders. Check/uncheck
+the boxes on the timeline legend to view different types of changes over time.  The time
+periods and changes you select will be reflected in what appears on the map. Click on the
+“Reset map” button to clear the filters.
+ </p>
+<article>
+
+
+<!-- Left Content-->
+<article>
+    <p><img src="components/com_geolive/users_files/user_files_400/Uploads/[G]_7Ee_[ImAgE]_lOb_Vt7.png?thumb=>47x>47"/>
+    Turn on/off markers that display changes to community
+newpapers (published fewer than five times per week) as well as paid-circulation and free
+daily newspapers. Symbols on the markers indicate the launch/closure of a publication,
+reductions/increases in publication frequency or the transition from print to online-only
+publication.
+</p>
+<p><img src="components/com_geolive/users_files/user_files_400/Uploads/ULj_[ImAgE]_ZKt_[G]_Ue3.png?thumb=>47x>47"/>
+Turn on/off markers that display changes to local private
+(commercial) radio stations and publicly-owned and operated radio stations. Symbols on
+the markers indicate the launch/closure of a radio station or increases/decreases in local
+news programming.
+</p>
+<p><img src="components/com_geolive/users_files/user_files_400/Uploads/VtS_[G]_Cx_[ImAgE]_Se4.png?thumb=>47x>47"/>
+Turn on/off markers that display changes to local private
+(commercial) television stations and publicly-owned and operated television stations.
+Symbols on the markers indicate the launch/closure of a television station or
+increases/decreases in local news programming.
+</p>
+<p><img src="components/com_geolive/users_files/user_files_400/Uploads/w5D_0Eq_[G]_cl_[ImAgE].png?thumb=>47x>47"/>
+Turn on/off markers that display changes to online local news
+sites. Symbols on the marker indicate the launch/closure of an online local news site.
+</p>
+
+</article>
+
+
+<!-- Top Content-->
+This popover will describe the search bar, tabs, and filter
+
+
+
+<script type="text/javascript">
+function onTutorialStart(){
+addTutorialStep('TOP_CENTER', 'Click on a blue circle to see details of changes to '+
+'multiple local news outlets in a concentrated geographic area. To return to the main map '+
+'click on the “Reset map” button.', function(el){
+
+    var cluster=null;
+
+    return {
+        margin:300,
+        onDisplay:function(){
+            el.addClass('cluster-hide');
+            cluster=el.appendChild(new Element('div', {class:'cluster-tutorial-icon', styles:{
+
+                position: 'absolute',
+    top: '190px',
+    width: '100px',
+    height: '100px',
+    background: 'rgba(10, 121, 177, 0.7)',
+    left: 'calc( 50% - 52px )',
+    'border-radius': '100%',
+    border: '1.5px solid #0A79B1'
+
+
+            }}));
+
+        },
+        onHide:function(){
+            el.removeClass('cluster-hide');
+            cluster.parentNode.removeChild(cluster);
+        }
+    };
+});
+}
+</script>

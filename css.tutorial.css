@@ -1,0 +1,6 @@
+.UIMapControl.cluster-hide>* {
+    opacity: 0.1;
+}
+.UIMapControl.cluster-hide>.cluster-tutorial-icon {
+    opacity: 1;
+}
