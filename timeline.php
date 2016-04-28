@@ -4,7 +4,7 @@ function onRender(timeline){
 /**
  * Copy the following into Timeline onRender script input (do not include the <script> tags...)
  */
-var erraSpan=container.appendChild(new Element('span', {'class':'era-s'}));
+ var erraSpan=container.appendChild(new Element('span', {'class':'era-s'}));
  var barBack=erraSpan.appendChild(new Element('div', {'class':'era-bar bk'}));
  var graphBar=erraSpan.appendChild(new Element('div',{'class':'timeline-graph'}))
  var bar=erraSpan.appendChild(new Element('div', {'class':'era-bar'}));
