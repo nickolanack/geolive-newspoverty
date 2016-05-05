@@ -27,7 +27,7 @@
         </td><td><p>
             Reset the map to show the full map of Canada and all markers.
         </p></td></tr>
-        <tr><td>
+        <tr style="display:none"><td>
             <img src="components/com_geolive/users_files/user_files_400/Uploads/[ImAgE]_[G]_ye0_jZc_WXv.png" style="
                 height: 40px;
                 width: auto;
@@ -148,5 +148,57 @@ function onTutorialStart(){
             }
         };
     });
+
+
+
+    addTutorialStep($$('.header-search.pull-right')[0], 
+        '<article><h3>How to add a marker to the map</h3>'+
+        '<p>1. Type the  media outlet name or name  or location into the search bar to see if the information has already been added to the map.</p>'+
+        '<p>2. Click on the green button in the top right-hand corner of the map to  add information.</p>'+
+        '<p>3. Type in the name of the community or the street address of the media outlet in the search bar. Select the location  The map will zoom into that location.</p>'+
+        '<p>4. Click on the blank marker beside the search bar.</p>'+
+        '<p>5. Follow the instructions.  NOTE: You must provide an online source for the information your provide so we can verify it. </p></article>', 
+        {
+            margin:0
+    });
 }
+
+function startTutorial(defaultStartFn, cancelFn){
+
+
+
+    var html='<h3>The Local News Map: Tell us what\'s happening to local news in your community</h3>'+
+
+    '<p>The purpose of this crowd-sourced map is to track what is happening to local newspapers, broadcast outlets and online news sites in communities across Canada. When a newspaper or television station shuts down, are new online news sites emerging to fill gap?  Is local news poverty a problem? How are local news organizations in smaller cities and rural areas weathering the disruption in the news business?</p>'+
+
+    '<p>For this project, a local news outlet is defined as a news organization that demonstrates a commitment to accuracy/transparency, and is devoted primarily to reporting and publishing original news about local people, places, issues and events. Tell us about changes to local news outlets in your area including:'+
+
+    '<ul><li>The closure, launch or merger of a news outlet (radio, television, online, or newspaper)</li>'+
+    '<li>Clearly identifiable service increases such as increased publication frequency for a community paper, or the addition of a local newscast or public affairs show by the local radio/television station</li>'+
+    '<li>Clearly identifiable service reductions such as a broadcaster’s decision to cancel/reduce the length of a local newscast, or a reduction in the number of times a newspaper publishes per week</li>'+
+    '<li>The map <span style="text-decoration:underline;">does not</span> track layoffs/hiring by local news organizations that continue to operate</li></ul></p>'+
+
+    '<p>About this project: This project is a collaboration between the Ryerson University School of Journalism’s <a href="http://localnewsresearchproject.ca/" target="+blank">Local News Research Project</a> and the University of British Columbia’s <a href="http://spice.geolive.ca/" target="_blank">SpICE Lab</a> (Spatial Information for Community Mapping. It is supported by the <a href="http://geothink.ca/" target="_blank">Canadian Geospatial and Open Data Research Partnership;</a> Canadian Media Guild/CWA Canada; Canadian Journalists for Free Expression; Mitacs Accelerate;  Unifor;  and Ryerson University.</p>'+
+
+    '<p>Contact us: <a href="mailto:localnewspoverty@gmail.com" target="_blank">localnewspoverty@gmail.com</a></p>';
+
+
+    var content=new Element('div',{html:html, styles:{padding:'20px'}});
+    var pushbox;
+    var cancel=true;
+    content.appendChild(new Element('button',{'class':"btn btn-primary", html:"Continue Tour", styles:{'float':'right'}, events:{click:function(){
+        cancel=false;
+        pushbox.close();
+        defaultStartFn();
+    }}}));
+
+    pushbox=PushBoxWindow.open(content, {push:true, handler:'append', size: {x: 800, y: 550}, onClose:function(){
+        if(cancel){
+            cancelFn();
+        }
+    }});
+
+}
+
+
 </script>
