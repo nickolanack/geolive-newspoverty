@@ -173,8 +173,12 @@ function onTutorialStart(){
 function startTutorial(defaultStartFn, cancelFn){
 
 
+    if(!widget_22.timelineIsVisible()){
+        widget_22.showTimeline();
+    }
 
-    var html='<img src="//newspoverty.geolive.ca/localnewsresearch-logo.png" style="height: 56px; margin-right: 30px;">'+
+
+    var html='<img src="//newspoverty.geolive.ca/localnewsresearch-logo.png" style="height: 56px; margin-right: 204px;">'+
     '<img src="//newspoverty.geolive.ca/geolive-logo.png"/>'+
     '<h3>The Local News Map: Tell us what\'s happening to local news in your community</h3>'+
 
