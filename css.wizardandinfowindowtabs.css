@@ -299,6 +299,10 @@ span.tab.active:after {
     background-color: #0A79B1;
 }
 
+.tileButtonContainer.active {
+    background-color: #4EAEDE;
+}
+
 .tip-text {
     font-weight: 500;
 }
