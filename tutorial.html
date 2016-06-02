@@ -10,14 +10,7 @@
         </td><td><p>
             Fullscreen version of the map.
         </p></td></tr>
-        <tr><td>
-            <img src="administrator/components/com_geolive/assets/Tile%20Icons/uncluster.png?tint=rgb(255,%20255,%20255)" style="
-                margin: 10px;
-                margin-left: 2px;
-            ">
-        </td><td><p>
-            Click “Ungroup markers” to show all individual markers.
-        </p></td></tr>
+        
         <tr><td>
             <img src="administrator/components/com_geolive/assets/Tile%20Icons/home.png?tint=rgb(255,%20255,%20255)" style="
                 height: 40px;
@@ -27,6 +20,25 @@
         </td><td><p>
             Reset the map to show the full map of Canada and all markers.
         </p></td></tr>
+
+        <tr><td>
+            <img src="administrator/components/com_geolive/assets/Tile%20Icons/uncluster.png?tint=rgb(255,%20255,%20255)" style="
+                margin: 10px;
+                margin-left: 2px;
+            ">
+        </td><td><p>
+            Click “Ungroup markers” to show all individual markers.
+        </p></td></tr>
+
+        <tr><td>
+            <img src="administrator/components/com_geolive/assets/Map%20Item%20Icons/sm_bargraph.png?tint=rgb(255,%20255,%20255)" style="
+                margin: 10px;
+                margin-left: 14px;
+            ">
+        </td><td><p>
+            Display the timeline and changes graph.
+        </p></td></tr>
+
         <tr style="display:none"><td>
             <img src="components/com_geolive/users_files/user_files_400/Uploads/[ImAgE]_[G]_ye0_jZc_WXv.png" style="
                 height: 40px;
@@ -57,7 +69,7 @@
 <!-- Bottom Content-->
 </article>
 <p>
-This timelines shows the number of changes to local news media
+This timeline shows the number of changes to local news media
 outlets over time. Isolate changes by time period by moving the sliders. Check/uncheck
 the boxes on the timeline legend to view different types of changes over time.  The time
 periods and changes you select will be reflected in what appears on the map. Click on the
@@ -74,31 +86,25 @@ periods and changes you select will be reflected in what appears on the map. Cli
         </td><td><p>
             Turn on/off markers that display changes to community
             newpapers (published fewer than five times per week) as well as paid-circulation and free
-            daily newspapers. Symbols on the markers indicate the launch/closure of a publication,
-            reductions/increases in publication frequency or the transition from print to online-only
-            publication.
+            daily newspapers.
         </p></td></tr>
         <tr><td>
             <img src="components/com_geolive/users_files/user_files_400/Uploads/ULj_[ImAgE]_ZKt_[G]_Ue3.png?thumb=>47x>47"/>
         </td><td><p>
             Turn on/off markers that display changes to local private
-            (commercial) radio stations and publicly-owned and operated radio stations. Symbols on
-            the markers indicate the launch/closure of a radio station or increases/decreases in local
-            news programming.
+            (commercial) radio stations and publicly-owned and operated radio stations.
         </p></td></tr>
         <tr><td>
             <img src="components/com_geolive/users_files/user_files_400/Uploads/VtS_[G]_Cx_[ImAgE]_Se4.png?thumb=>47x>47"/>
         </td><td><p>
             Turn on/off markers that display changes to local private
             (commercial) television stations and publicly-owned and operated television stations.
-            Symbols on the markers indicate the launch/closure of a television station or
-            increases/decreases in local news programming.
         </p></td></tr>
         <tr><td>
             <img src="components/com_geolive/users_files/user_files_400/Uploads/w5D_0Eq_[G]_cl_[ImAgE].png?thumb=>47x>47"/>
         </td><td><p>
             Turn on/off markers that display changes to online local news
-            sites. Symbols on the marker indicate the launch/closure of an online local news site.
+            sites.
         </p></td></tr>
     </tbody>
 </table>
@@ -150,7 +156,7 @@ function onTutorialStart(){
     });
 
 
-
+    /*
     addTutorialStep($$('.header-search.pull-right')[0], 
         '<article><h3>How to add a marker to the map</h3>'+
         '<p>1. Type the media outlet name or location into the search bar to see if the information has already been added to the map.</p>'+
@@ -161,15 +167,22 @@ function onTutorialStart(){
         {
             margin:0
     });
+    */
 }
 
 function startTutorial(defaultStartFn, cancelFn){
 
 
+    if(!widget_22.timelineIsVisible()){
+        widget_22.showTimeline();
+    }
 
-    var html='<h3>The Local News Map: Tell us what\'s happening to local news in your community</h3>'+
 
-    '<p>The purpose of this crowd-sourced map is to track what is happening to local newspapers, broadcast outlets and online news sites in communities across Canada. When a newspaper or television station shuts down, are new online news sites emerging to fill gap?  Is local news poverty a problem? How are local news organizations in smaller cities and rural areas weathering the disruption in the news business?</p>'+
+    var html='<img src="//newspoverty.geolive.ca/localnewsresearch-logo.png" style="height: 56px; margin-right: 204px;">'+
+    '<img src="//newspoverty.geolive.ca/geolive-logo.png"/>'+
+    '<h3>The Local News Map: Tell us what\'s happening to local news in your community</h3>'+
+
+    '<p>The purpose of this crowd-sourced map is to track what is happening to local newspapers, broadcast outlets and online news sites in communities across Canada. When a newspaper or television station shuts down, are new online news sites emerging to fill the gap?  Is local news poverty a problem? How are local news organizations in smaller cities and rural areas weathering the disruption in the news business?</p>'+
 
     '<p>For this project, a local news outlet is defined as a news organization that demonstrates a commitment to accuracy/transparency, and is devoted primarily to reporting and publishing original news about local people, places, issues and events. Tell us about changes to local news outlets in your area including:'+
 
@@ -178,7 +191,7 @@ function startTutorial(defaultStartFn, cancelFn){
     '<li>Clearly identifiable service reductions such as a broadcaster’s decision to cancel/reduce the length of a local newscast, or a reduction in the number of times a newspaper publishes per week</li>'+
     '<li>The map <span style="text-decoration:underline;">does not</span> track layoffs/hiring by local news organizations that continue to operate</li></ul></p>'+
 
-    '<p>About this project: This project is a collaboration between the Ryerson University School of Journalism’s <a href="http://localnewsresearchproject.ca/" target="+blank">Local News Research Project</a> and the University of British Columbia’s <a href="http://spice.geolive.ca/" target="_blank">SpICE Lab</a> (Spatial Information for Community Mapping. It is supported by the <a href="http://geothink.ca/" target="_blank">Canadian Geospatial and Open Data Research Partnership;</a> Canadian Media Guild/CWA Canada; Canadian Journalists for Free Expression; Mitacs Accelerate;  Unifor;  and Ryerson University.</p>'+
+    '<p>About this project: This project is a collaboration between the Ryerson University School of Journalism’s <a href="http://localnewsresearchproject.ca/" target="+blank">Local News Research Project</a> and the University of British Columbia’s <a href="http://spice.geolive.ca/" target="_blank">SpICE Lab</a> (Spatial Information for Community Mapping). It is supported by the <a href="http://geothink.ca/" target="_blank">Canadian Geospatial and Open Data Research Partnership;</a> Canadian Media Guild/CWA Canada; Canadian Journalists for Free Expression; Mitacs Accelerate;  Unifor;  and Ryerson University.</p>'+
 
     '<p>Contact us: <a href="mailto:localnewspoverty@gmail.com" target="_blank">localnewspoverty@gmail.com</a></p>';
 
