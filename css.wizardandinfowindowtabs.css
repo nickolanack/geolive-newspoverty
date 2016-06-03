@@ -294,6 +294,11 @@ span.tab.active:after {
     box-sizing: border-box;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
+
+.logout.tileButtonContainer, .login.tileButtonContainer  {
+    background-color: rgb(0,160,80);
+}
+
 .tileButtonContainer:hover {
     box-shadow: 0 0 7px rgba(0,0,0,0.3);
     background-color: #0A79B1;
