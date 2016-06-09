@@ -177,7 +177,7 @@ echo ($this->direction == 'rtl' ? ' rtl' : '');
 			<article><h3>How to add a marker to the map.</h3>
         <p>1. Click on the green button to register/add content.</p>
         <p>2. Type the media outlet location or exact address into the search bar to see if it is already on the map.</p>
-        <p>3. To add a marker, select the highlighted location.</p>
+        <p>3. To add a marker, select the highlighted location from the search results.</p>
         <p>4. Click on the blank marker beside the search bar.</p>
         <p>5. Follow the instructions. NOTE: You must provide an online link for the information you provide so we can verify it. Markers cannot be added without this information.</p></article>
 
