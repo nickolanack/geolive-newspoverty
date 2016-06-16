@@ -60,7 +60,7 @@ if ($this->params->get('logoFile')) {
     $logo = '<span class="site-title" title="' . $sitename . '">' . htmlspecialchars($this->params->get('sitetitle')) .
          '</span>';
 } else {
-    $logo = '<span class="site-title" title="' . $sitename . '">' . $sitename . '</span>';
+    $logo = '<span class="site-title" title="' . $sitename . '">' . $sitename . ': <span class="subtitle">Tell us what\'s happening to local news in your community</span></span>';
 }
 
 $googleFont = str_replace(' + ', ' ', $this->params->get('
