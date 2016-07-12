@@ -122,6 +122,12 @@ Behavior('graph');
                 }
             });
 
+     application.getEventManager().addEvent('onShowTimeline',function(){
+
+      hintBar.checkResize();
+      detailBar.checkResize();
+
+     });
 
      if (resp.subscription) {
           AjaxControlQuery.Subscribe(resp.subscription, function(result) {
@@ -163,6 +169,8 @@ Behavior('graph');
            }
 
      });
+
+
 
 
 

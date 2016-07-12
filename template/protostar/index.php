@@ -60,7 +60,7 @@ if ($this->params->get('logoFile')) {
     $logo = '<span class="site-title" title="' . $sitename . '">' . htmlspecialchars($this->params->get('sitetitle')) .
          '</span>';
 } else {
-    $logo = '<span class="site-title" title="' . $sitename . '">' . $sitename . '</span>';
+    $logo = '<span class="site-title" title="' . $sitename . '">' . $sitename . ': <span class="subtitle">Tell us what\'s happening to local news in your community</span></span>';
 }
 
 $googleFont = str_replace(' + ', ' ', $this->params->get('
@@ -156,6 +156,11 @@ echo ($this->direction == 'rtl' ? ' rtl' : '');
 							<?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription')) . '</div>'; ?>
 						<?php endif; ?>
 					</a>
+
+					<img src="//newspoverty.geolive.ca/localnewsresearch-logo.png" style="height: 56px;position: absolute;right: 20px;">
+				    <img src="//newspoverty.geolive.ca/geolive-logo.png" style="position: absolute; right: 20px; top: 90px;">
+
+
 					<div class="header-search pull-right">
 						<jdoc:include type="modules" name="position-0" style="none" />
 
@@ -174,12 +179,13 @@ echo ($this->direction == 'rtl' ? ' rtl' : '');
 				</div>
 			</header>
 
-			<article><h3>How to add a marker to the map.</h3>
-        <p>1. Click on the green button to register/add content.</p>
+			<article><h3>How to add a marker to the map</h3>
+        <p>1. Click the green login button on the map to register/add content.</p>
         <p>2. Type the media outlet location or exact address into the search bar to see if it is already on the map.</p>
-        <p>3. To add a marker, select the highlighted location.</p>
+        <p>3. To add a marker, select the highlighted location from the search results.</p>
         <p>4. Click on the blank marker beside the search bar.</p>
-        <p>5. Follow the instructions. NOTE: You must provide an online link for the information you provide so we can verify it. Markers cannot be added without this information.</p></article>
+        <p>5. Follow the instructions. NOTE: You must provide an online link for the information you provide so we can verify it. Markers cannot be added without this information.</p>
+        <p>6. Having trouble with the map? Contact us at <a href="mailto:localnewspoverty@gmail.com">localnewspoverty@gmail.com.</a></p></article>
 
 			<?php if ($this->countModules('position-1')) : ?>
 				<nav class="navigation" role="navigation">
