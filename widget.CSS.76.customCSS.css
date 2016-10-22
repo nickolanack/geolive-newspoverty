@@ -1,0 +1,38 @@
+.UIMapControl.cluster-hide>* {
+    opacity: 0.1;
+}
+.UIMapControl.cluster-hide>.cluster-tutorial-icon {
+    opacity: 1;
+}
+
+span.result-clickable.location {
+    background: #BAF5BA;
+}
+
+.usr-icn li:after {
+    content: attr(data-label);
+    position: absolute;
+    width: 100px;
+    position: absolute;
+    bottom: -25px;
+    left: -3px;
+}
+
+
+.login.tileButtonContainer:after, .logout.tileButtonContainer:after {
+    content: "login";
+    line-height: 48px;
+    color:white;
+    font-size: 14px;
+}
+.logout.tileButtonContainer:after {
+    content: "logout";
+}
+
+.login.tileButtonContainer .tileButton, .logout.tileButtonContainer .tileButton {
+    opacity: 0;
+}
+
+.tab-0 .content>span {
+    display: none;
+}
