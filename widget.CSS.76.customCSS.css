@@ -24,6 +24,11 @@ span.result-clickable.location {
     line-height: 48px;
     color:white;
     font-size: 14px;
+
+position: absolute;
+    left: 9px;
+    top: 0;
+
 }
 .logout.tileButtonContainer:after {
     content: "logout";
