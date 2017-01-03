@@ -53,16 +53,18 @@ name=paperType+" : "+transitionType;
 
 }else if(layer.getName()=='Online news'){
 
+ //online does not have a cloud button (public private) option
+
  name="online : "+transitionType;
 
 }else if(layer.getName()=='Radio'){
  var radioType=wizardDataSet.Attribute_newsAttributes_Object.radioType;
 
-name="radio - "+radioType+" : "+transitionType;
+name=radioType+" : "+transitionType;
 }else if(layer.getName()=='Television'){
  var tvType=wizardDataSet.Attribute_newsAttributes_Object.tyType;
 
-name="TV - "+tvType+" : "+transitionType;
+name=tvType+" : "+transitionType;
 }else{
  alert("Icon map script is broken, has the layer list or names changed");
 }

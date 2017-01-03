@@ -411,8 +411,8 @@
                             []
                         ],
                         "_diagramState": {
-                            "x": -197,
-                            "y": 383
+                            "x": -177,
+                            "y": 403
                         },
                         "children": [
                             {
@@ -429,8 +429,8 @@
                                     []
                                 ],
                                 "_diagramState": {
-                                    "x": 58,
-                                    "y": 151
+                                    "x": 78,
+                                    "y": 171
                                 },
                                 "children": [
                                     {
@@ -496,8 +496,8 @@
                                                     []
                                                 ],
                                                 "_diagramState": {
-                                                    "x": 441,
-                                                    "y": 820
+                                                    "x": 461,
+                                                    "y": 840
                                                 },
                                                 "children": [
                                                     {
@@ -613,7 +613,7 @@
                                                                         "hoverColor": "rgb(143, 188, 143)",
                                                                         "selectedColor": "rgb(143, 188, 143)",
                                                                         "shuffleTags": false,
-                                                                        "tags": "[[1,\"tv-public\"], [1, \"tv-private\"]]"
+                                                                        "tags": "[[1,\"TV - public\"], [1, \"TV - private\"]]"
                                                                     }
                                                                 },
                                                                 {
@@ -861,8 +861,8 @@
                                                     []
                                                 ],
                                                 "_diagramState": {
-                                                    "x": 873,
-                                                    "y": 38
+                                                    "x": 893,
+                                                    "y": 58
                                                 },
                                                 "children": [
                                                     {
@@ -1178,15 +1178,15 @@
                                                     []
                                                 ],
                                                 "_diagramState": {
-                                                    "x": 696,
-                                                    "y": 482
+                                                    "x": 716,
+                                                    "y": 502
                                                 },
                                                 "children": [
                                                     {
                                                         "class": "Node",
                                                         "_diagramState": {
-                                                            "x": 878,
-                                                            "y": 502
+                                                            "x": 1058,
+                                                            "y": 742
                                                         }
                                                     }
                                                 ],
@@ -1532,7 +1532,7 @@
                                                         "menu"
                                                     ],
                                                     "_diagramState": {
-                                                        "minimized": true
+                                                        "minimized": false
                                                     }
                                                 }
                                             },
@@ -1543,15 +1543,15 @@
                                                     []
                                                 ],
                                                 "_diagramState": {
-                                                    "x": 322,
-                                                    "y": 41
+                                                    "x": 342,
+                                                    "y": 61
                                                 },
                                                 "children": [
                                                     {
                                                         "class": "Node",
                                                         "_diagramState": {
-                                                            "x": 504,
-                                                            "y": 61
+                                                            "x": 684,
+                                                            "y": 301
                                                         }
                                                     }
                                                 ],
@@ -1660,7 +1660,7 @@
                                                                         "hoverColor": "rgb(143, 188, 143)",
                                                                         "selectedColor": "rgb(143, 188, 143)",
                                                                         "shuffleTags": false,
-                                                                        "tags": "[[1,\"radio-public\"],[1,\"radio-private\"]]"
+                                                                        "tags": "[[1,\"radio - public\"],[1,\"radio - private\"]]"
                                                                     }
                                                                 },
                                                                 {
@@ -1897,7 +1897,7 @@
                                                         "menu"
                                                     ],
                                                     "_diagramState": {
-                                                        "minimized": true
+                                                        "minimized": false
                                                     }
                                                 }
                                             }
