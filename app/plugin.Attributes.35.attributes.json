@@ -21,10 +21,10 @@
                     "tableName": "newsAttributes",
                     "tableSuffix": "_4266",
                     "title": "paperType",
-                    "label": "Paper Type",
+                    "label": "Media Type",
                     "description": "",
                     "fieldType": "text",
-                    "color": "#FFFFFF",
+                    "color": "rgb(undefined, undefined, undefined)",
                     "searchability": "public",
                     "editability": "registered",
                     "fieldTextOptions": {

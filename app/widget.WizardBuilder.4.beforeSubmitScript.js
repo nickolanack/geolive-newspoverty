@@ -58,11 +58,11 @@ name=paperType+" : "+transitionType;
  name="online : "+transitionType;
 
 }else if(layer.getName()=='Radio'){
- var radioType=wizardDataSet.Attribute_newsAttributes_Object.radioType;
+ var radioType=wizardDataSet.Attribute_newsAttributes_Object.paperType;
 
 name=radioType+" : "+transitionType;
 }else if(layer.getName()=='Television'){
- var tvType=wizardDataSet.Attribute_newsAttributes_Object.tyType;
+ var tvType=wizardDataSet.Attribute_newsAttributes_Object.paperType;
 
 name=tvType+" : "+transitionType;
 }else{
