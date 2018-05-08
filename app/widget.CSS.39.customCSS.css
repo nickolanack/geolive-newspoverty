@@ -318,3 +318,8 @@ span.Attribute_Item.atr-url.a-type-text a {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.search-bar-content {
+
+    max-width: 800px;
+}
