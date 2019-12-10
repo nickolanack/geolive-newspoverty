@@ -30,6 +30,7 @@ var iconSetNameMap={
   "daily paper - paid : new outlet produced by merger": "components\/com_geolive\/users_files\/user_files_400\/Uploads\/[G]_ytA_531_[ImAgE]_04.png",
   "daily paper - paid : daily becomes a community paper": "components\/com_geolive\/users_files\/user_files_400\/Uploads\/PYa_[ImAgE]_kk8_[G]_lV6.png",
   "daily paper - paid : shifted to online": "components\/com_geolive\/users_files\/user_files_400\/Uploads/[ImAgE]_ys7_w8l_4gP_[G].png", 
+"daily paper - paid : increase in service": "components\/com_geolive\/users_files\/user_files_400\/rYy_18e_FMR_[G]_[ImAgE].png",
   "online : closed": "components\/com_geolive\/users_files\/user_files_400\/Uploads\/[G]_L9q_GPZ_[ImAgE]_CSi.png",
   "online : new": "components\/com_geolive\/users_files\/user_files_400\/Uploads\/[G]_Qrd_6BY_[ImAgE]_FYG.png",
   "online : increase in service": "components\/com_geolive\/users_files\/user_files_400\/Uploads\/SPT_WE6_[ImAgE]_XPb_[G].png",
